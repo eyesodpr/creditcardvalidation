@@ -12,14 +12,29 @@ const prompt = require('prompt-sync')({
 var num = 'abcd';
 var validlength = false;
 var matches = 20;
+console.clear();
+console.log('  ____              _ _ _      ____              _ ');
+console.log(' / ___|_ __ ___  __| (_) |_   / ___|__ _ _ __ __| |');
+console.log('| |   | \'__/ _ \\\/ _` | | __| | |   / _` | \'__/ _` |');
+console.log('| |___| | |  __/ (_| | | |_  | |__| (_| | | | (_| |');
+console.log(' \\____|_|  \\___|\\__,_|_|\\__|  \\____\\__,_|_|  \\__,_|');
+console.log('                                              ');     
+console.log('__     __    _ _     _       _             ');
+console.log('\\ \\   \/ \/_ _| (_) __| | __ _| |_ ___  _ __ ');
+console.log(' \\ \\ \/ \/ _` | | |/ _` |\/ _` | __\/ _ \\| \'__|');
+console.log('  \\ V \/ (_| | | | (_| | (_| | || (_) | |   ');
+console.log('   \\_\/ \\__,_|_|_|\\__,_|\\__,_|\\__\\___/|_|   ');
+console.log('');
+ 
 
 // Prompt for Credit card number
 while (validlength == false) {
+  console.log("default length      ----------------");
 	num = prompt('Credit card number: ');
         if (num.length != 15 && num.length != 16) { // Check for correct length of card number
                 console.log('Length of ', num.length, 'is not valid for', num);
                 validlength = false;
-		break;
+		            continue;
         }
 	matches = prompt('Number of valid creations (default=20): '); // set default to 20
 	try{

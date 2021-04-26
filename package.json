@@ -1,0 +1,24 @@
+{
+  "name": "creditcardvalidation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cardlister.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyesodpr/creditcardvalidation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eyesodpr/creditcardvalidation/issues"
+  },
+  "homepage": "https://github.com/eyesodpr/creditcardvalidation#readme",
+  "dependencies": {
+    "credit-card-validator": "^1.0.8",
+    "prompt-sync": "^4.2.0"
+  }
+}
