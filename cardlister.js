@@ -3,9 +3,6 @@
 // npm install credit-card-validator
 // npm install prompt-sync
 
-npm list credit-card-validator || npm install credit-card-validator
-npm list prompt-sync || npm install prompt-sync
-
 var creditCardValidator = require('credit-card-validator');
 const prompt = require('prompt-sync')({
 	sigint: true
